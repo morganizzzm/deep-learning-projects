@@ -1,1 +1,52 @@
-Hi
+Customer Churn Prediction Project
+
+
+This project is focused on predicting customer churn for a business using a machine learning model. Customer churn refers to the phenomenon where customers stop doing business with a company. Predicting churn can help a company take proactive steps to retain customers.
+
+Data
+
+The dataset used in this project contains the following columns:
+RowNumber: The row number or identifier.
+CustomerId: Unique identifier for each customer.
+Surname: Customer's surname or last name.
+CreditScore: The customer's credit score.
+Geography: Customer's geographical location.
+Gender: Gender of the customer.
+Age: Age of the customer.
+Tenure: Number of years the customer has been with the company.
+Balance: Bank balance of the customer.
+NumOfProducts: Number of products the customer has with the company.
+HasCrCard: Whether the customer has a credit card (1 for yes, 0 for no).
+IsActiveMember: Whether the customer is an active member (1 for yes, 0 for no).
+EstimatedSalary: Estimated salary of the customer.
+Exited: Target variable indicating whether the customer churned (1 for yes, 0 for no).
+
+
+Setup
+
+Clone this repository to your local machine:
+git clone https://github.com/morganizzzm/customer-churn-prediction.git
+
+Download the dataset and place it in the project directory.
+The link to the dataset on Kaggle:
+https://www.kaggle.com/datasets/barelydedicated/bank-customer-churn-modeling
+
+
+Usage
+
+call function make_prediction over data and alreaady compiled model
+
+# Example usage:
+data_array = [
+    1, 123456, 'Doe', 750, 'France',
+    'Male', 35, 5, 5000, 2, 1,
+    1, 60000
+]
+make_prediction(data_array, model)
+
+AS A RESULT YOU WILL GET ONE OF THE OUTPUTS:
+
+The model predicts that the customer will churn
+The model predicts that the customer will not churn
+
+
